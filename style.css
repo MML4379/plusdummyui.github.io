@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+* {margin:0;padding:0;box-sizing: border-box;}
+.faIcon {font-family: "Font Awesome 6 Free"}
+#plusapp{background:#000;font-family:"Inter",sans-serif;overflow-x:hidden;}
+.plus-css {color:#fdfdfd;font-family:"Inter";cursor:default;}
+.ultBadge {
+    background:linear-gradient(-45deg, #971cfc, #3f0091);
+    padding:6px;
+    border-radius:8px;
+    font-weight:bold;
+}
+.darkmode {background:transparent;color:#fdfdfd;}
+.navIcon {padding:8px 14px;text-decoration:none;border-radius:8px;float:left;transition:0.6s;}
+.active {background:#333;}
+.navIcon:hover:not(.active) {background:#333;transition:0.6s;}
+.topbar {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    padding:4px;
+    position: fixed;
+    background: #000000AA;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+}
+.searchInput {
+    padding:6px;
+    font-size:14px;
+    border: 2px solid #555;
+    background: #555;
+    border-radius: 50px;
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-user-drag:none;
+    transition:0.5s;
+}
+.searchInput::placeholder {
+    color:#fdfdfd;
+}
+.searchInput:hover {
+    background-color:#777;
+    transition:0.5s;
+}
+.searchInput:active {
+    background-color:#777;
+    transition:0.5s;
+}
+.searchSub {
+    padding: 4px;
+    padding-left:5.75px;
+    padding-right:5.75px;
+    font-size: 18px;
+    background: #555;
+    border: 2px solid #555;
+    border-radius:50%;
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-user-drag:none;
+    transition:0.5s;
+}
+.searchSub:hover {
+    background:#777;
+    transition:0.5s;
+}
+.searchBox {width:100%;margin-left:15%;}
+.navIcons {margin-left:16px;-webkit-user-select:none;user-select:none;-webkit-user-drag:none;}
+.logo {margin-top:0.5%;-webkit-user-select:none;user-select:none;-webkit-user-drag:none;font-weight:normal;}
+.navAtr, .navAtr img {
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    margin-left:4px;
+}
+.otherIcons {
+    display:flex;
+    flex-direction:row;
+    float:right;
+    position:absolute;
+    right: 12px;
+}
+.contentWrapper {
+    display:grid;
+    grid-template-columns: 20% 60fr 20fr;
+    gap: 8px;
+}
+.content {
+    background: linear-gradient(-45deg, #dd0404, #0265EE);
+    border-radius: 10px;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    top: 48px;
+}
+.leftCol{
+    background: #262626BC;
+    padding: 4px;
+    border-radius: 8px;
+}
+.verifiedUlt {
+    font-weight:bold;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: linear-gradient(-45deg, #3f0091, #971cfc);
+    border-radius: 15px;
+}
+.verifiedPrm {
+    font-weight:bold;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: linear-gradient(-45deg, #d4af37, #FFD700);
+    border-radius: 15px;
+}
+.qGroup {
+    padding: 2px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    font-weight: bold;
+    padding-top: 8px;
+}
+.quickGroups {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.postPfp {
+    width:48px;
+    height:48px;
+    border-radius:50%;
+}
+.flexPosts {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 10px;
+    height: auto;
+}
+.plusPost {
+    background: #26262677;
+    padding: 6px;
+    border-radius: 8px;
+    width: 65%;
+    margin-left: 17.5%;
+}
+.plusPost h4 {font-size: 18px;font-weight:bold;}
+.pubDate {font-size:11px;}
+.publisherInfo {
+    display: flex;
+    flex-direction: row;
+}
+.publisherInfo h4,h5 {margin-top: 2%;padding:4px;}
+.publisherInfo p {margin-top:2.5%;padding:4px;}
+.postimg {width:80%;margin-left:10%;border-radius:10px;}
+#notifBell:hover {animation: shake 2s}
+.sep{border:3px solid #555;border-radius:6px;}
+.postStats {
+    display:grid;
+    grid-template-columns: 25% 25fr 25fr 25fr;
+    gap: 8px;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 17px;
+}
+.verifiedNrm {
+    font-weight:bold;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: linear-gradient(-45deg, #024eb8, #0265ef);
+    border-radius: 15px;
+}
+.trending {text-align:center;font-weight:bold;}
+.postSettings {margin-top:15px;margin-left:8px;transition:0.5s;}
+.postSettings:hover {color:#0265EF;border-radius:50%;transition:0.5s}
+.commentPfp {width:32px;height:32px;border-radius:50%;}
+.ad {text-align:center;}
+.contentAlert {
+    border-left: 4px solid #dd0404;
+    border-radius:8px;
+    background: #dd040455;
+    padding:2px;
+    font-size:12px;
+}
+.rightCol {
+    background:#262626BC;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 8px;
+}
+.addPost {
+    background: #262626BC;
+    width: 65%;
+    margin-left:17.5%;
+    border-radius: 8px;
+    padding: 4px;
+}
+.textPost {
+    resize:none;
+    width: 85%;
+    height: 10vh;
+    margin-left: 7.5%;
+    margin-top:4px;
+    border: 2px solid #555;
+    background: #262626DD;
+    padding: 4px;
+    border-radius: 8px;
+    cursor:text;
+}
+.postFiles {
+    display: grid;
+    grid-template-columns: 20% 20fr 20fr 40fr;
+    width: 90%;
+    margin-left: 5%;
+    gap: 8px;
+    text-align: center;
+}
+.upImg {padding:4px;transition: 0.5s;}
+.upImg:hover {color:#0265EF;transition:0.5s;background:#262626;border-radius:8px;}
+.upVid {padding:4px;transition:0.5s;}
+.upVid:hover {color: #6f00ff;background:#262626;border-radius:8px;transition:0.5s;}
+.upAud {padding:4px;transition:0.5s;}
+.upAud:hover {color: #06BF00;background:#262626;border-radius:8px;transition:0.5s;}
+.postButton {padding:4px;transition:0.5s;}
+.postButton:hover {color: #dd0404;background:#262626;border-radius:8px;transition:0.5s;}
+.blurredCard {-webkit-filter:blur(8px);filter:blur(8px);-webkit-user-select:none;user-select:none;}
+
+@keyframes shake {
+    0% {
+        rotate: -45deg;
+    }
+    50% {
+        rotate: 90deg;
+    }
+    100% {
+        rotate: -45deg;
+    }
+}
+
+::-webkit-scrollbar {width: 16px;background:transparent;}
+::-webkit-scrollbar-track {background:transparent;padding:4px;-webkit-backdrop-filter:blur(6px);backdrop-filter: blur(6px);}
+::-webkit-scrollbar-thumb {width:4px;background:#444;border-radius:8px;transition:0.5s;}
+::-webkit-scrollbar-thumb:hover {width:8px; background:#444;border-radius:16px;transition:0.5s;}

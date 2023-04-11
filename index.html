@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title id="pageTitle">(1) MML+ • Home</title>
+    </head>
+    <body id="plusapp">
+        <div class="plus-css topbar darkmode">
+            <h4 class="plus-css logo">MML+ <span class="ultBadge">Ultimate</span></h4>
+            <div class="navIcons">
+                <a href="#!" class="navIcon active faIcon plus-css" aria-label="Home (Active)"><i class="fa-solid fa-house"></i><strong> Home</strong></a>
+                <a href="#!" class="navIcon faIcon plus-css" aria-label="Messages"><i class="fa-solid fa-message"></i> Messages</a>
+                <a href="#!" class="navIcon faIcon plus-css" aria-label="Groups"><i class="fa-solid fa-people-group"></i> Groups</a>
+            </div>
+            <div class="navIcons otherIcons">
+                <a onclick="openNotifsMenu()" class="navIcon faIcon plus-css" id="notifCenter" title="Notification Center"><i class="fa-solid fa-bell" id="notifBell"></i> <span id="notifCnt"></span></a>
+                <a href="./@mml/index.html" class="navAtr plus-css"><img alt="" src="./@mml/pfp.png" title="Go to MML+ Profile"></a>
+            </div>
+        </div>
+        <div class="plus-css content darkmode" id="plusContent">
+            <div class="plus-css contentWrapper darkmode">
+                <div class="plus-css leftCol darkmode">
+                    <form class="plus-css searchBox darkmode" action="./search.html" id="searchPlusApp">
+                        <input type="search" class="plus-css searchInput darkmode" name="results" placeholder="Search MML+">
+                        <button type="submit" class="plus-css searchSub darkmode"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="plus-css quickGroups darkmode" id="quickGroups">
+                        <h3>Groups you're in</h3>
+                        <br>
+                        <div class="plus-css qGroup darkmode" id="g98ir04g9hjvb9">
+                            <p>MML Tech LLC <span class="verifiedUlt"><i class="fa-solid fa-check"></i></span></p>
+                        </div>
+                        <div class="plus-css qGroup darkmode" id="jig4hh2bd8igh8">
+                            <p>Cat Pics <span class="verifiedPrm"><i class="fa-solid fa-check"></i></span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ad plus-css darkmode" id="vaji84ha">
+                        <h3>Put an ad here!</h3>
+                        <a href="https://ads.mmltech.net/placead?src=mmlplus" rel="noopener" target="_blank" class="plus-css darkmode">ads.mmltech.net</a>
+                    </div>
+                </div>
+                <div class="plus-css flexPosts darkmode" id="fyp">
+                    <div class="plus-css addPost darkmode">
+                        <strong>Make a post</strong>
+                        <form class="plus-css newPost darkmode" id="postContent">
+                            <textarea class="plus-css textPost darkmode" placeholder="What are you thinking, @mml?" id="plusNrmPost"></textarea>
+                            <div class="plus-css postFiles darkmode">
+                                <a onclick="uploadImg()" class="plus-css upImg darkmode" id="imgPost"><i class="fa-solid fa-file-image"></i> <strong>Image</strong></a>
+                                <a onclick="uploadVid()" class="plus-css upVid darkmode" id="vidPost"><i class="fa-solid fa-file-video"></i> <strong>Video</strong></a>
+                                <a onclick="uploadAud()" class="plus-css upAud darkmode" id="audPost"><i class="fa-solid fa-file-audio"></i> <strong>Audio</strong></a>
+                                <a onclick="postContent('postContent', 'plusNrmPost+imgPost+vidPost+audPost')" class="plus-css postButton darkmode"><i class="fa-solid fa-plus"></i> <strong>Post Now</strong></a>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="plus-css plusPost darkmode">
+                        <div class="publisherInfo">
+                            <a href="./@mml/index.html" class="plus-css darkmode" target="_blank" rel="noopener"><img src="./@mml/pfp.png" alt="" class="postPfp"></a>
+                            <h4 title="@mml">MML <span class="verifiedUlt" title="@mml is verified!"><i class="fa-solid fa-check"></i></span></h4>
+                            <p class="pubDate"> • Posted 4/8/2023 at 12:38 AM</p>
+                            <a onclick="showPostSettings('9h4gbds8')" class="plus-css darkmode postSettings"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </div>
+                        <div class="postContent">
+                            <p>Animated profile pictures are now accepted in MML+! Enjoy it while you can! 😉</p>
+                            <img src="./@mml/media/samplepfp.gif" alt="Sample profile picture" class="postimg">
+                        </div>
+                        <p class="trending">🌟 Top #1 in <a href="./tag/plusupdates.html" class="plus-css darkmode">#plusupdates</a> right now</p>
+                        <br>
+                        <hr class="sep">
+                        <div class="postStats">
+                            <div class="likeCount" id="jg84hdfa">
+                                <p><i class="fa-regular fa-thumbs-up"></i> • 33K</p>
+                            </div>
+                            <div class="commentCount" id="s4ji8gns">
+                                <p><i class="fa-solid fa-comment"></i> • 9K</p>
+                            </div>
+                            <div class="viewCount" id="ng984nid">
+                                <p><i class="fa-solid fa-eye"></i> • 103K</p>
+                            </div>
+                            <div class="shareButton" id="j4g90bnd">
+                                <p onclick="openShareModal('9h4gbds8')"><i class="fa-solid fa-share-from-square"></i> • 6.7K</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="plus-css plusPost darkmode">
+                        <div class="publisherInfo">
+                            <a href="./@red/index.html" class="plus-css darkmode" target="_blank" rel="noopener"><img src="./@red/pfp.png" alt="" class="postPfp"></a>
+                            <h4 title="@red">Red human <span class="verifiedNrm" title="@red is verified!"><i class="fa-solid fa-check"></i></span></h4>
+                            <p class="pubDate"> • Posted 4/9/2023 at 1:12 AM</p>
+                        </div>
+                        <div class="postContent">
+                            <p>Thank you <a href="./@mml/index.html" class="darkmode" title="MML - @mml - Verified ☑️">@mml</a> for animated profile pics, even if I don't use them 😊</p>
+                        </div>
+                        <hr class="sep">
+                        <div class="postStats">
+                            <div class="likeCount" id="hg84d8kk">
+                                <p><i class="fa-regular fa-thumbs-up"></i> • 19.1K</p>
+                            </div>
+                            <div class="commentCount" id="bbtdaabs">
+                                <p><i class="fa-solid fa-comment"></i> • 3.3K</p>
+                            </div>
+                            <div class="viewCount" id="fdsa999s">
+                                <p><i class="fa-solid fa-eye"></i> • 76K</p>
+                            </div>
+                            <div class="shareButton" id="j4ggdavv">
+                                <p onclick="openShareModal('9888d8fv')"><i class="fa-solid fa-share-from-square"></i> • 3.9K</p>
+                            </div>
+                        </div>
+                        <hr class="sep">
+                        <p class="pinnedNote">📌 Pinned by <a href="./@red/index.html" class="plus-css darkmode"><strong>@red</strong></a>!</p>
+                        <div class="pinnedComment">
+                            <div class="plus-css postComment darkmode">
+                                <div class="publisherInfo">
+                                    <a href="./@mml/index.html" class="plus-css darkmode" target="_blank" rel="noopener"><img src="./@mml/pfp.png" alt="" class="commentPfp"></a>
+                                    <h5 title="@mml">MML <span class="verifiedUlt" title="@mml is verified!"><i class="fa-solid fa-check"></i></span></h4>
+                                    <p class="pubDate"> • Posted 4/9/2023 at 12:38 AM</p>
+                                    <a onclick="showPostSettings('9h4gbds8')" class="plus-css darkmode postSettings"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                                <div class="postContent">
+                                    <p>I try to impress 🤷</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="plus-css plusPost darkmode">
+                        <div class="publisherInfo">
+                            <a href="./@memes/index.html" class="plus-css darkmode" target="_blank" rel="noopener"><img src="./@memes/pfp.png" alt="" class="postPfp"></a>
+                            <h4 title="@memes">Memes because yes <span class="verifiedPrm" title="@memes is verified!"><i class="fa-solid fa-check"></i></span></h4>
+                            <p class="pubDate"> • Posted 4/8/2023 at 11:09 PM</p>
+                        </div>
+                        <span class="contentAlert">This content might trigger some people.</span>
+                        <div class="postContent">
+                            <p>Yea uhh....</p>
+                            <img src="./@memes/media/wtfgoogle.png" alt="Meme!" class="postimg blurredCard" onclick="unblurCard('img-t8i94pbgdpagh')" id="img-t8i94pbgdpagh">
+                        </div>
+                        <br>
+                        <hr class="sep">
+                        <div class="postStats">
+                            <div class="likeCount" id="jg84hdfa">
+                                <p><i class="fa-regular fa-thumbs-up"></i> • 32M</p>
+                            </div>
+                            <div class="commentCount" id="s4ji8gns">
+                                <p><i class="fa-solid fa-comment"></i> • 1.1M</p>
+                            </div>
+                            <div class="viewCount" id="ng984nid">
+                                <p><i class="fa-solid fa-eye"></i> • 38M</p>
+                            </div>
+                            <div class="shareButton" id="j4g90bnd">
+                                <a href="javascript:openShareModal('9h4gbds8')" class="plus-css darkmode"><i class="fa-solid fa-share-from-square"></i> • 361K</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="plus-css plusPost darkmode">
+                        <div class="publisherInfo">
+                            <a href="./@pinkfong/index.html" class="plus-css darkmode" target="_blank" rel="noopener"><img src="./noacc.png" alt="" class="postPfp"></a>
+                            <h4><span class="verifiedNrm"><i class="fa-solid fa-notdef"></i> Deleted</span></h4>
+                            <p class="pubDate"> • Flagged 4/11/2023 at 1:09 AM</p>
+                        </div>
+                        <span class="contentAlert">This content was blocked for abusing the API.</span>
+                        <div class="postContent blurredCard">
+                            <p>Watch Baby Shark on YouTube now!</p>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XqZsoesa55w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <hr class="sep">
+                        <div class="postStats">
+                            <div class="likeCount" id="jg84hdfa">
+                                <p><i class="fa-regular fa-thumbs-up"></i> • NaN</p>
+                            </div>
+                            <div class="commentCount" id="s4ji8gns">
+                                <p><i class="fa-solid fa-comment"></i> • NaN</p>
+                            </div>
+                            <div class="viewCount" id="ng984nid">
+                                <p><i class="fa-solid fa-eye"></i> • NaN</p>
+                            </div>
+                            <div class="shareButton" id="j4g90bnd">
+                                <a onclick="openShareModal('disabled')" class="plus-css darkmode"><i class="fa-solid fa-share-from-square"></i> • Disabled</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plus-css rightCol darkmode"></div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

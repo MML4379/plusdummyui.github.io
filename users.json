@@ -1,0 +1,28 @@
+{
+    "json-type": "devImport_MMLPLUS",
+    "users": {
+        "21C7E7D996C05DD16488EE950D212F36": {
+            "name": "MML",
+            "nick": "MML",
+            "handle": "@mml",
+            "type": "business",
+            "verified": true,
+            "accplan": "ultimate",
+            "email": "chairman@mmltech.net",
+            "phonenum": "19891946340",
+            "status": "idling"
+        },
+        "A80A441A4232CE701806C23D3D1FFBF3": {
+            "name": "Michael Peace",
+            "nick": null,
+            "handle": "@notmml",
+            "type": "normal",
+            "verified": true,
+            "accplan": "ultimate",
+            "email": "michaelpeace937@gmail.com",
+            "altEmail": "michaelpeace976@plusmail.com",
+            "phonenum": "19893100008",
+            "status": "watching"
+        }
+    }
+}
